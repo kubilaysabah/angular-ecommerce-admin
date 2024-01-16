@@ -1,0 +1,153 @@
+// colors
+$white: #ffffff;
+$alabaster: #f8f8f8;
+$athens-gray: #f2f2f3;
+$iron: #e5e5e7;
+$french-gray: #c8c9cc;
+$aluminium: #a6a8ad;
+$raven: #7b7e88;
+$pale-sky: #667085;
+$oxford-blue: #353e54;
+
+$harp: #f1f8f4;
+$mountain-meadow: #12b76a;
+$salem: #0b7343;
+
+$chalibs: #fff2f1;
+$linen: #fdf2f2;
+$cindirella: #fce6e5;
+$pink: #ffcac5;
+$bright-sun: #fec84b;
+$flamingo: #f04438;
+$vermilion: #ff4308;
+$prairie-sand: #972b23;
+$persian-plum: #6b1e19;
+
+$black-squeeze: #f4f8fb;
+$selago: #e4effb;
+$selago-2: #f1f7fd;
+$jagged-ice: #cbe0ec;
+$aqua-island: #9dc7dc;
+$cerulean: #0ba5ec;
+$azure-radiance: #007aff;
+$calypso: #347295;
+$bahama-blue: #066895;
+
+$solitaire: #fef4e6;
+$cape-honey: #fedfab;
+$himalaya: #715921;
+$punga: #503f17;
+
+
+$primary-solid: (
+  "background": $oxford-blue,
+  "hover": lighten($oxford-blue, 10%),
+  "text": $white,
+);
+
+$primary-outlined: (
+  "background": $white,
+  "hover": lighten($oxford-blue, 10%),
+  "border": $oxford-blue,
+  "text": $oxford-blue,
+  "hover-text": $white,
+);
+
+$secondary-solid: (
+  "background": $vermilion,
+  "hover": lighten($vermilion, 10%),
+  "text": $white,
+);
+
+$secondary-solid-disabled: (
+  "background": $chalibs,
+  "text": $pink,
+);
+
+$light-gray-solid: (
+  "background": $alabaster,
+  "text": $raven,
+);
+
+$gray-solid: (
+  "background": $athens-gray,
+  "text": $raven,
+);
+
+$gray-solid-disabled: (
+  "background": $athens-gray,
+  "text": $french-gray,
+);
+
+$gray-outlined: (
+  "background": $white,
+  "border": $french-gray,
+  "text": $raven,
+);
+
+$success-solid: (
+  "background": $harp,
+  "text": $salem,
+);
+
+$danger-solid: (
+  "background": $linen,
+  "text": $prairie-sand,
+);
+
+$danger-solid-light: (
+  "background": $chalibs,
+  "text": $oxford-blue,
+);
+
+$info-solid: (
+  "background": $selago-2,
+  "text": $bahama-blue,
+  "background-2": $cerulean,
+  "text-2": $white,
+);
+
+$warning-solid: (
+  "background": $solitaire,
+  "text": himalaya,
+  "text-bold": $punga,
+);
+
+$input: (
+  "background": $white,
+  "border": $iron,
+  "text": $oxford-blue,
+  "placeholder": $aluminium,
+  "danget": $flamingo,
+);
+
+$text: (
+  "title": $oxford-blue,
+  "description": $raven,
+  "small": $aluminium,
+  "link-gray": $raven,
+  "link-secondary": $vermilion,
+  "link-info": $azure-radiance,
+  "danger": $vermilion,
+);
+
+$list: (
+  "title": $oxford-blue,
+  "disabled": $raven,
+  "item": $pale-sky,
+);
+
+$progress: (
+  "success": $mountain-meadow,
+  "danger": $flamingo,
+  "warning": $bright-sun,
+  "loading": $cerulean,
+);
+
+$breakpoints: (
+  "xxl": 1600px,
+  "xl": 1440px,
+  "lg": 1024px,
+  "md": 768px,
+  "sm": 320px,
+);

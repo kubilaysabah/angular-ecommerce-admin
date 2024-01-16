@@ -1,0 +1,17 @@
+@use "sass:map";
+
+@import "./variables";
+
+// min mixin is used to target a breakpoint and up
+@mixin min($breakpoint: map.get($breakpoints, "lg")) {
+  @media (min-width: map.get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+// max mixin is used to target a breakpoint and down
+@mixin max($breakpoint: map.get($breakpoints, "lg")) {
+  @media (max-width: #{map.get($breakpoints, "lg") - 1px}) {
+    @content;
+  }
+}
