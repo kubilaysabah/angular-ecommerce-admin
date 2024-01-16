@@ -1,1 +1,17 @@
-<h1 i18n>Hoş Geldiniz!</h1>
+<main>
+  <form (ngSubmit)="login()" [formGroup]="form">
+    <fieldset>
+      <label i18n>E-Mail</label>
+      <input
+        type="email"
+        formControlName="email"
+        required
+      >
+    </fieldset>
+    <fieldset>
+      <label i18n>Password</label>
+      <input type="password" formControlName="password" required>
+    </fieldset>
+    <button i18n [disabled]="loading" type="submit">Gönder</button>
+  </form>
+</main>
