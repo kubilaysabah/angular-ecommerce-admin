@@ -1,5 +1,8 @@
+@import './variables';
+
 *, ::before, ::after {
   box-sizing: border-box;
+  font-family: $font-family;
 }
 
 html {
@@ -17,9 +20,22 @@ ul, ol {
   margin: 0;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  display: block;
+  margin-bottom: $gutter;
+}
+
 button {
   -webkit-appearance: none;
   appearance: none;
+  border: 1px solid;
+  border-color: inherit;
+  font-weight: 500;
 
   &:not(:disabled) {
     cursor: pointer;
@@ -29,11 +45,31 @@ button {
   }
 }
 
+label {
+  display: block;
+  margin-bottom: $gutter / 2;
+  font-size: map-get($label, "font-size");
+  font-weight: map-get($label, "font-weight");
+  color: map-get($label, "text");
+}
+
 input {
   &:not([type="checkbox"], [type="radio"], [type="color"], [type="file"], [type="range"], [type="submit"]) {
     width: 100%;
     -webkit-appearance: none;
     appearance: none;
+    border: 1px solid map-get($input, "border");
+    background-color: map-get($input, "background");
+    font-size: map-get($input, "font-size");
+    font-weight: map-get($input, "font-weight");
+    padding: map-get($input, "padding");
+    color: map-get($input, "text");
+    outline-color: map-get($input, "outline");
+    transition: map-get($input, "transition");
+
+    &:focus {
+      color: map-get($input, "outline");
+    }
   }
 
   &[type="number"] {

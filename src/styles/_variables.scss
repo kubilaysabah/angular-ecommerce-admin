@@ -1,3 +1,7 @@
+$font-family: "Poppins", sans-serif;
+$gutter: 16px;
+$transition: all ease 0.2s;
+
 // colors
 $white: #ffffff;
 $alabaster: #f8f8f8;
@@ -113,12 +117,23 @@ $warning-solid: (
   "text-bold": $punga,
 );
 
+$label: (
+  "font-size": 1.3rem,
+  "font-weight": 500,
+  "text": $raven,
+);
+
 $input: (
+  "outline": $azure-radiance,
   "background": $white,
   "border": $iron,
   "text": $oxford-blue,
   "placeholder": $aluminium,
   "danget": $flamingo,
+  "font-size": 1.6rem,
+  "font-weight": 500,
+  "padding": 0.5rem 1rem,
+  "transition": $transition
 );
 
 $text: (
