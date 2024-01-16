@@ -13,10 +13,20 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "tr",
+        "locales": {
+          "en-US": "src/locale/messages.en.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": [
+              "tr",
+              "en-US"
+            ],
             "outputPath": "dist/admin",
             "index": "src/index.html",
             "browser": "src/main.ts",
