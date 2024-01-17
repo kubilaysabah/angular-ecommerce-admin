@@ -3,7 +3,15 @@ export interface LoginBody {
   password: string;
 }
 
-export interface RegisterBody {}
+export interface RegisterBody {
+  image?: string;
+  firstname: string;
+  lastname: string;
+  phone: string;
+  email: string;
+  password: string;
+  role?: number;
+}
 
 export interface User {
 

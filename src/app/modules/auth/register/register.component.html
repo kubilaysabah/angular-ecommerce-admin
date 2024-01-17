@@ -1,0 +1,42 @@
+<main>
+  <form (ngSubmit)="register()" [formGroup]="form">
+    <fieldset>
+      <label i18n>Firstname</label>
+      <input
+        type="text"
+        formControlName="firstname"
+        required
+      >
+    </fieldset>
+    <fieldset>
+      <label i18n>Lastname</label>
+      <input
+        type="text"
+        formControlName="lastname"
+        required
+      >
+    </fieldset>
+    <fieldset>
+      <label i18n>Phone</label>
+      <input
+        type="tel"
+        formControlName="phone"
+        required
+      >
+    </fieldset>
+    <fieldset>
+      <label i18n>E-Mail</label>
+      <input
+        type="email"
+        formControlName="email"
+        required
+      >
+    </fieldset>
+    <fieldset>
+      <label i18n>Password</label>
+      <input type="password" formControlName="password" required>
+    </fieldset>
+    <button i18n [disabled]="loading" type="submit">Gönder</button>
+  </form>
+  <a i18n [routerLink]="['/auth/login']">Hesabın var mı? Giriş Yap</a>
+</main>
